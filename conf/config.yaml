@@ -1,0 +1,30 @@
+app:
+  name: "cloudflare_ClearCache"
+  mode: "dev"
+  port: 8000
+  version: "v0.0.1"
+auth:
+  token: "xxx"                        #token
+  email: "xxx@xxx.me"
+log:
+  level: "debug"                        # 日记等级
+  filename: "cloudflare_ClearCache.log"                 # 日记路径及日记文件名
+  max_size: 200                         # 最大单个日记文件大小 单位是兆 （M）
+  max_age: 30                           # 保留30天
+  max_backups: 7                        # 多少天备份一次 这里是7天
+bossjob:
+  domain: ["bossjob.com", "bossjob.ai", "bossjob.co", "bossjob.ph", "bossjob.com.tr", "bossjob.id", "bossjob.jp", "bossjob.my", "bossjob.sg", "bossjob.tw"]
+#mysql:
+#  host: "192.168.5.100"                 # mysql 数据库地址
+#  port: 3306                            # mysql 数据库端口
+#  user: "root"                          # mysql 数据库用户名
+#  password: "123456"                # mysql 数据库密码
+#  dbname: "bluebell"                        # mysql 数据库名
+#  max_open_conns: 1000                  # 程序连接mysql最大连接数
+#  max_idle_conns: 50                    # 程序连接mysql的最大空闲连接数
+#redis:
+#  host: "192.168.5.184"                 # redis 中间件地址
+#  port: 6379                            # redis 中间件端口
+#  password: ""                          # redis 密码 默认为空
+#  db: 0                                 # use default DB
+#  pool_size: 1000                       # redis 连接池大小
